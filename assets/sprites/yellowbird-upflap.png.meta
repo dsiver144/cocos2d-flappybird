@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "afccb020-08ee-4d8d-96a9-6cd26fa9c515",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "point",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": true,
+  "width": 34,
+  "height": 24,
+  "platformSettings": {},
+  "subMetas": {
+    "yellowbird-upflap": {
+      "ver": "1.0.4",
+      "uuid": "faccbea4-33ed-4cc1-98aa-63a10a8b35d7",
+      "rawTextureUuid": "afccb020-08ee-4d8d-96a9-6cd26fa9c515",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 34,
+      "height": 24,
+      "rawWidth": 34,
+      "rawHeight": 24,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
