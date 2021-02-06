@@ -86,7 +86,7 @@ cc.Class({
                 var gameOverNode = cc.find("Canvas/GameOver");
                 gameOverNode.y += 50;
                 cc.tween(gameOverNode).to(0.5, {opacity: 255, y: gameOverNode.y - 50}).start();
-                cc.tween(cc.find("Canvas/GameOver/btn_playAgain")).delay(1).to(1.0, {opacity: 255}).start();
+                cc.tween(cc.find("Canvas/GameOver/btn_playAgain")).delay(1).to(0.5, {opacity: 255}).start();
                 Global.gameLost = true;
                 this.getComponent("cc.Animation").stop();
                 break;

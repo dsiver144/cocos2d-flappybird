@@ -6,7 +6,7 @@ cc.Class({
     },
 
     start () {
-        this.node.on("mousedown", this.onBtnPlayAgainClick, this);
+        //this.node.on("click", this.onBtnPlayAgainClick, this);
     },
 
     onBtnPlayAgainClick() {
