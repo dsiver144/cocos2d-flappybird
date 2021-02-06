@@ -39,6 +39,7 @@ cc.Class({
         this._pressed = false;
         cc.director.getPhysicsManager().enabled = true;
         Global.score = 0;
+        this.scoreDisplay.getComponent("ScoreDisplay").clearScore();
         this.scoreDisplay.getComponent("ScoreDisplay").refreshScore(Global.score);
     },
 
