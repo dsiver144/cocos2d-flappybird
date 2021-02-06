@@ -1,0 +1,1 @@
+window._CCSettings={platform:"web-mobile",groupList:["default","New Group 3"],collisionMatrix:[[true],[false,false]],hasResourcesBundle:false,hasStartSceneBundle:false,remoteBundles:[],subpackages:[],launchScene:"db://assets/scenes/FlappyBird.fire",orientation:"portrait",jsList:[]};
