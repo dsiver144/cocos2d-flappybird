@@ -192,7 +192,7 @@
       "array": [
         0,
         0,
-        511.82101363660325,
+        501.41904809627647,
         0,
         0,
         0,
@@ -222,21 +222,21 @@
     "node": {
       "__id__": 3
     },
-    "_enabled": true,
+    "_enabled": false,
     "_cullingMask": 4294967295,
     "_clearFlags": 7,
     "_backgroundColor": {
       "__type__": "cc.Color",
-      "r": 207,
-      "g": 59,
-      "b": 59,
+      "r": 0,
+      "g": 0,
+      "b": 0,
       "a": 255
     },
-    "_depth": -1.1,
+    "_depth": 0,
     "_zoomRatio": 1,
     "_targetTexture": null,
     "_fov": 60,
-    "_orthoSize": 10,
+    "_orthoSize": 255,
     "_nearClip": 1,
     "_farClip": 4096,
     "_ortho": true,
@@ -248,7 +248,7 @@
       "height": 1
     },
     "_renderStages": 1,
-    "_alignWithScreen": true,
+    "_alignWithScreen": false,
     "_id": "bfKGRu/sVB8LgR59hLQ98u"
   },
   {
@@ -1642,8 +1642,8 @@
       "width": 288,
       "height": 512
     },
-    "_fitWidth": false,
-    "_fitHeight": false,
+    "_fitWidth": true,
+    "_fitHeight": true,
     "_id": "37mR+owzRGaqL3zlMQJbuJ"
   },
   {
@@ -1656,9 +1656,9 @@
     "_enabled": true,
     "alignMode": 1,
     "_target": null,
-    "_alignFlags": 45,
-    "_left": 0,
-    "_right": 0,
+    "_alignFlags": 0,
+    "_left": 144,
+    "_right": 144,
     "_top": 0,
     "_bottom": 0,
     "_verticalCenter": 0,
@@ -1670,17 +1670,27 @@
     "_isAbsHorizontalCenter": true,
     "_isAbsVerticalCenter": true,
     "_originalWidth": 0,
-    "_originalHeight": 0,
+    "_originalHeight": 512,
     "_id": "b2bXwvdV5POJ1BqXvdBiX2"
   },
   {
-    "__type__": "ac0c78M1YNOpoKrcKbcDIJt",
+    "__type__": "cc.Mask",
     "_name": "",
     "_objFlags": 0,
     "node": {
       "__id__": 2
     },
     "_enabled": true,
-    "_id": "ceCyZUSotLwIhTb8lU4vSP"
+    "_materials": [
+      {
+        "__uuid__": "eca5d2f2-8ef6-41c2-bbe6-f9c79d09c432"
+      }
+    ],
+    "_spriteFrame": null,
+    "_type": 0,
+    "_segments": 64,
+    "_N$alphaThreshold": 0,
+    "_N$inverted": false,
+    "_id": "31FgM053hFHr5ljDsJWw+9"
   }
 ]
