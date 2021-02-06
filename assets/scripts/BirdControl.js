@@ -20,10 +20,14 @@ cc.Class({
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_DOWN, this.onKeyDown, this);
         cc.systemEvent.on(cc.SystemEvent.EventType.KEY_UP, this.onKeyUp, this);
         cc.find("Canvas").on("mousedown", this.onPlayerAction, this);
+        cc.find("Canvas").on("touchstart", this.onTouchStart, this);
+        cc.find("Canvas").on("touchend", this.onTouchEnd, this);
         this.audioEngine = this.getComponent("AudioEngine");
         this._pressed = false;
+        this._touched = false;
         this._originalPos = new cc.Vec2(this.node.x, this.node.y);
         this._playedDieSound = false;
+        
     },
 
     restartBird() {
@@ -41,6 +45,16 @@ cc.Class({
         Global.score = 0;
         this.scoreDisplay.getComponent("ScoreDisplay").clearScore();
         this.scoreDisplay.getComponent("ScoreDisplay").refreshScore(Global.score);
+    },
+
+    onTouchStart(e) {
+        if (this._touched) return;
+        this._touched = true;
+        this.onPlayerAction();
+    },
+
+    onTouchEnd(e) {
+        this._touched = false;
     },
 
     onKeyDown(event) {
