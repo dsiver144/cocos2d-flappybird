@@ -33,7 +33,7 @@ cc.Class({
     restartBird() {
         this.node.x = this._originalPos.x;
         this.node.y = this._originalPos.y;
-        this.node.rotation = 0;
+        this.node.angle = 0;
         this._rigidBody.linearVelocity = cc.v2();
         this.getComponent("cc.Animation").start();
         cc.find("Canvas/PipeLayer").removeAllChildren();
@@ -123,7 +123,7 @@ cc.Class({
         if (!Global.gameStarted) return;
         var velocityY = this._rigidBody.linearVelocity.y;
         var angleRate = Math.min(Math.max(velocityY, -this.jumpForce), this.jumpForce) / this.jumpForce;
-        this.node.rotation = (angleRate) * -this.turnAngle;
+        this.node.angle = -(angleRate) * -this.turnAngle;
         
     },
 });

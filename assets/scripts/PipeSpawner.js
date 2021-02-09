@@ -1,10 +1,3 @@
-// Learn cc.Class:
-//  - https://docs.cocos.com/creator/manual/en/scripting/class.html
-// Learn Attribute:
-//  - https://docs.cocos.com/creator/manual/en/scripting/reference/attributes.html
-// Learn life-cycle callbacks:
-//  - https://docs.cocos.com/creator/manual/en/scripting/life-cycle-callbacks.html
-
 var Global = require("Global");
 
 cc.Class({
@@ -20,6 +13,7 @@ cc.Class({
 
     start () {
         this._frameCount = 0;
+        this._spawned = false;
     },
 
     spawnPipes() {
@@ -37,10 +31,11 @@ cc.Class({
     update (dt) {
         if (!Global.gameStarted) return;
         if (Global.gameLost) return;
-        this._frameCount += 1;
-        if (this._frameCount == Global.spawnPipeTime) {
-            this.spawnPipes();
-            this._frameCount = 0;
-        }
+        if (!this._spawned) {
+            this._spawned = true;
+            setTimeout(()=>{
+                this.spawnPipes();
+                this._spawned = false;
+            }, 1.5 * 1000);
     },
 });
