@@ -37,5 +37,6 @@ cc.Class({
                 this.spawnPipes();
                 this._spawned = false;
             }, 1.5 * 1000);
+        }
     },
 });
